@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.nav-links li a:hover,
+.nav-links li a.active{
+    color: #7c162e;
+    border-bottom: 3px solid #C5254B
+}
+.container {
+
+    margin: 0 ;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #fff;
+    color: #C5254B;
+    padding : 10px 10px;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 170%;
+    text-align: left;
+    float: left;
+    transform: translateY(30%);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.vase a{
+    text-decoration: none;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+#product1{
+    text-align: center;
+}
+#product1 .pros{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+   border: 1px solid #33333317;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    text-decoration: none;
+
+}
+#product1 .pros img{
+    width: 100%;
+    border-radius:20px ;
+}
+#product1 .pros .des{
+text-align: start;
+padding: 10px 0;
+
+}
+#product .pros .des span{
+    color: #606063;
+    font-size: 12px;
+    text-decoration: none;
+}
+#product1 .pros .des h3{
+    padding-top: 7px;
+    color: #1a1a1a;
+    text-decoration: none;
+    
+}
+#product1 .pros .des h4{
+    color: #C5254B;
+}
+#product1 .pros:hover{
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.06);
+}
+.des{
+    font-family: Arial;
+}
+#sc{
+    padding-left: 80%;
+    
+}
+.stars{
+    color:rgb(255, 213, 0);
+}
+#product1 .procon{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #C5254B;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 5%;
+}
+
+.nav-links li a:hover {
+    background-color: #c5254a16;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+   
+   
+}
